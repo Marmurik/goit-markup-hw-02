@@ -9,15 +9,27 @@
   --color-five--: #f5f4fa;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--color-three--);
   background-color: var(--color-one--);
+  margin: 0;
 }
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .link-design {
   text-decoration: none;
@@ -27,6 +39,14 @@ ul {
 }
 
 /*------------------------ HEADER DESIGN--------------------*/
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: tomato;
+}
 .header-text {
   font-weight: 500;
   font-size: 14px;
@@ -68,21 +88,29 @@ ul {
 .tel-design {
   color: var(--color-four--);
 }
-
-/*------------------------ HEROE SECTION DESIGN--------------------*/
-.heroe-section-design {
-  background-color: #2f303a;
+.section {
+  display: block;
 }
+
+.centered {
+  text-align: center;
+}
+/*------------------------ HEROE SECTION DESIGN--------------------*/
 
 .heroe-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-one--);
+  margin-top: 0;
+  margin-bottom: 30px;
+  background-color: var(--color-three--);
 }
+/* .heroe-title-position {
+.heroe-section-design {
+  padding: 200px 452px 280px 452px; */
 
 .heroe-button-design {
   font-family: inherit;
@@ -93,6 +121,8 @@ ul {
   color: var(--color-one--);
   background-color: #2196f3;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 .heroe-button-design:hover,
 .heroe-button-design:focus {
@@ -115,17 +145,24 @@ ul {
   margin: -1px;
 }
 
+h3.main-prop-title {
+  margin-top: 0;
+}
+
 .main-prop-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .main-prop-text {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--color-four--);
+  margin-bottom: 0;
+  margin-top: 0;
 }
 /*------------------------ ABOUT OUR ACTIVITY--------------------*/
 
@@ -134,11 +171,13 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 /*------------------------ OUR TEAM--------------------*/
 .our-team-section {
   background-color: var(--color-five--);
+  padding-bottom: 94px;
 }
 .our-team-item {
   background-color: white;
@@ -147,24 +186,50 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 0;
+  padding-top: 94px;
+  padding-bottom: 0px;
 }
-
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 .team-position {
   font-size: 16px;
   line-height: 1.18;
   color: var(--color-four--);
+  padding-bottom: 30px;
 }
+.container .team-section .img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /*------------------------ FOOTER--------------------*/
 .footer-design {
   background-color: #2f303a;
 }
-
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 20px;
+  padding-right: 1240px;
+}
+.address-position {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+.last-item {
+  padding-bottom: 0px;
+}
+.footer-logo-design {
+  margin-bottom: 20px;
+}
 .address-contact-info {
   font-family: inherit;
   font-size: 14px;
@@ -182,6 +247,7 @@ ul {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
+
 .footer-link-design {
   text-decoration: none;
 }
@@ -206,6 +272,7 @@ ul {
   font-weight: 500;
   background: var(--color-five--);
   cursor: pointer;
+  border-radius: 4px;
 }
 .btn-color:hover,
 .btn-color:focus {
